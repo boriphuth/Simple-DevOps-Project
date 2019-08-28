@@ -24,6 +24,11 @@
    sudo usermod -aG docker dockeradmin
    usermod -aG docker dockeradmin
    ```
+ 2.Permission denied while trying to connect to the Docker daemon socket
+  ```
+   sudo chmod 666 /var/run/docker.sock
+   ```
+ 
 ### Validation test
 1. Create a tomcat docker container by pulling a docker image from the public docker registry
    ```sh
