@@ -21,6 +21,7 @@
    ```
 1. add a user to docker group to manage docker 
    ```
+   sudo usermod -aG docker dockeradmin
    usermod -aG docker dockeradmin
    ```
 ### Validation test
