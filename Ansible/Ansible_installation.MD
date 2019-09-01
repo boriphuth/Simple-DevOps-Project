@@ -36,6 +36,11 @@ Ansible is an open-source automation platform. It is very, very simple to set up
    ssh-keygen
    ```
 1. Copy keys onto all ansible managed hosts (on Control node)
+ ```sh 
+   ip addr
+   ```
+     eth0: inet 172.31.19.13/20
+   
    ```sh 
    ssh-copy-id ansadmin@<target-server>
    ```
