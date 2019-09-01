@@ -55,6 +55,7 @@ Ansible is an open-source automation platform. It is very, very simple to set up
    
    # add user to docker group 
    usermod -aG docker ansadmin
+   vi /etc/ssh/sshd_config
 
    ```
 1. Create a directory /etc/ansible and create an inventory file called "hosts" add control node and managed hosts IP addresses to it. 
