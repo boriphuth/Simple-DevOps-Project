@@ -19,7 +19,7 @@ Jenkins is a self-contained Java-based program, ready to run out-of-the-box, wit
    ```sh
    java -version
    find /usr/lib/jvm/java-1.8* | head -n 3
-   JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.212.b04-1.el8_0.x86_64
+   JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.212.b04-0.45.amzn1.x86_64
    export JAVA_HOME
    PATH=$PATH:$JAVA_HOME
     # To set it permanently update your .bash_profile
@@ -59,7 +59,7 @@ Jenkins is a self-contained Java-based program, ready to run out-of-the-box, wit
    ```
   #### Configure Jenkins
 - The default Username is `admin`
-- Grab the default password 
+- Grab the default password
 - Password Location:`/var/lib/jenkins/secrets/initialAdminPassword`
 - `Skip` Plugin Installation; _We can do it later_
 - Change admin password
@@ -78,3 +78,5 @@ Jenkins is a self-contained Java-based program, ready to run out-of-the-box, wit
 1. Build job
 1. Check "console output"
 
+### AWS
+$ ssh -i "DevOps_Project.pem" ec2-user@ec2-3-0-90-108.ap-southeast-1.compute.amazonaws.com
