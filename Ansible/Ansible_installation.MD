@@ -43,12 +43,6 @@ Ansible is an open-source automation platform. It is very, very simple to set up
    
    ```sh 
    ssh-copy-id ansadmin@<target-server>
-   
-   cd /etc//ansible/
-   sudo vi hosts
-   
-   docker ip addr
-   localhost
    ```
 
 1. Ansible server used to create images and store on docker registry. Hence install docker, start docker services and add ansadmin to the docker group. 
@@ -64,6 +58,13 @@ Ansible is an open-source automation platform. It is very, very simple to set up
 
    ```
 1. Create a directory /etc/ansible and create an inventory file called "hosts" add control node and managed hosts IP addresses to it. 
+   ```sh
+   cd /etc//ansible/
+   sudo vi hosts
+   
+   docker ip addr
+   localhost
+```
  
 ### Validation test
 
